@@ -31,25 +31,30 @@
 <a name="welcome-to-the-nfs-ganesha-project" class="anchor" href="#welcome-to-the-nfs-ganesha-project"><span class="octicon octicon-link"></span></a>Welcome to the NFS-Ganesha Project.</h3>
 
 <p>The nfs-ganesha project is developing Open Source solutions for NFS and 9P based file servers.
-The development of nfs-ganesha started at CEA, Paris, France as a solution to providing NFS access to their tape archive library.  It has grown into a full featured file server that supports NFSv3, NFSv4, and now NFSv4.1 (pNFS).  We have even thrown in 9P protocol support.</p>
+The development of nfs-ganesha started at CEA, Paris, France as a solution to providing NFS access to their tape archive library.
+It has grown into a full featured file server that supports NFSv3, NFSv4.0, NFSv4.1, and NFSv4.2. We have even thrown in 9P protocol support.</p>
 
 <h2>
 <a name="news" class="anchor" href="#news"><span class="octicon octicon-link"></span></a>NEWS</h1>
 
-<p>NFS-Ganesha V 3 is now available.  Check out the <a href="https://github.com/nfs-ganesha/nfs-ganesha/wiki">nfs-ganesha project page</a> for more details details including the <a href="https://github.com/nfs-ganesha/nfs-ganesha/wiki#release-status">Release Status</a>.</p>
+<p>NFS-Ganesha V4.0 is now available.  Check out the <a href="https://github.com/nfs-ganesha/nfs-ganesha/wiki">nfs-ganesha project page</a> for more details details including the <a href="https://github.com/nfs-ganesha/nfs-ganesha/wiki#release-status">Release Status</a>.</p>
 
-<h3>
+<h2>
 <a name="our-active-projects-and-their-repositories" class="anchor" href="#our-active-projects-and-their-repositories"><span class="octicon octicon-link"></span></a>Our active projects and their source repositories</h3>
 
 <p>We currently manage several inter-related projects,</p>
 
-<h4>
+<h3>
 <a name="nfs-ganesha" class="anchor" href="#nfs-ganesha"><span class="octicon octicon-link"></span></a>nfs-ganesha</h4>
 
-<p>Nfs-ganesha is the main file server project.  It supports both the NFS and 9P protocols.  The NFS support includes NFSv3 with integrated NLM (lock manager) and MNT (mountd) services.  It also supports NFSv4 including pNFS (v4.1) and a subset of V4.2 commands.  For further information, check the <a href="https://github.com/nfs-ganesha/nfs-ganesha/wiki">nfs-ganesha wiki</a>.
+<p>Nfs-ganesha is the main file server project.  It supports both the NFS and 9P protocols.  The NFS support includes NFSv3 with integrated NLM (lock manager) and MNT (mountd) services.
+It also supports NFSv4 including pNFS (v4.1) and a subset of V4.2 commands.  For further information, check the <a href="https://github.com/nfs-ganesha/nfs-ganesha/wiki">nfs-ganesha wiki</a>.
 The source code can be found in the <a href="https://github.com/nfs-ganesha/nfs-ganesha">git repository</a>.</p>
 
-<h4>
+<p>The issue tracker here is the best place to bring issues to our attention however, if you have patches to submit, we use
+GerritHub for that, please see src/CONTRIBUTING_HOWTO.txt for code contributions.
+
+<h3>
 <a name="mooshika" class="anchor" href="#mooshika"><span class="octicon octicon-link"></span></a>mooshika</h4>
 
 <p><strong>This project has not been worked on in quite some time and is not currently tested or supported</strong>
@@ -58,31 +63,33 @@ The source code can be found in the <a href="https://github.com/nfs-ganesha/nfs-
 It does not yet have a wiki but the
 source code can be found in the <a href="https://github.com/nfs-ganesha/nfs-ganesha">git repository</a>.</p>
 
-<h4>
+<h3>
 <a name="ntirpc" class="anchor" href="#ntirpc"><span class="octicon octicon-link"></span></a>ntirpc</h4>
 
 <p>Libntirpc is a significant extension of the Sun tirpc library.  It supports full-duplex RPC over
 UDP/TCP.  Its source code is in the <a href="https://github.com/nfs-ganesha/ntirpc">git repository</a>.</p>
 
-<h4>
+<p>The issue tracker here is the best place to bring issues with ntirpc itself. Code submissions are accepted by pull request.
+
+<h3>
 <a name="nfs-ganesha-debian" class="anchor" href="#nfs-ganesha-debian"><span class="octicon octicon-link"></span></a>nfs-ganesha-debian</h4>
 
 <p>nfs-ganesha-debian contains the packaging files for building packages for Debian and Ubuntu. Its 
 source code is in the <a href="https://github.com/nfs-ganesha/nfs-ganesha-debian">git repository</a>.</p>
 
-<h4>
+<h3>
 <a name="nfs-ganesha.github.io" class="anchor" href="#nfs-ganesha.github.io"><span class="octicon octicon-link"></span></a>nfs-ganesha.github.io</h4>
 
 <p>The source for this page is in the <a href="https://github.com/nfs-ganesha/nfs-ganesha.github.io">git repository</a>.</p>
 
-<h3>
+<h2>
 <a name="getting-started" class="anchor" href="#getting-started"><span class="octicon octicon-link"></span></a>Getting Started</h3>
 
-<p>Each project is manages separately at this point.  The first place to go is to our IRC channel
-and ask questions.  You can also explore the old email archive on Sourceforge and the new email archive on
-https://lists.nfs-ganesha.org</p>
+<p>Each project is manages separately at this point. The first place to go is to our IRC channel
+and ask questions. You can also explore the old email archive on Sourceforge and the
+<a fref="https://lists.nfs-ganesha.org">new mail archive</A>.</p>
 
-<h3>
+<h2>
 <a name="packages" class="anchor" href="#packages"><span class="octicon octicon-link"></span></a>Packages</h3
 
 <p>Conveniences packages are provided for several popular Linux distributions:
@@ -95,23 +102,23 @@ https://lists.nfs-ganesha.org</p>
   </ul></p>
        
         
-<h3>
+<h2>
 <a name="sourceforge-site" class="anchor" href="#sourceforge-site"><span class="octicon octicon-link"></span></a>SourceForge site</h3>
 
-<p>The nfs-ganesha project started at SourceForge.  It is still available at
-<a href="http://nfs-ganesha.sf.net">nfs-ganesha at SourceForge</a> although the most up to date information
-is found here.</p>
+<p>The nfs-ganesha project started at SourceForge.  There is a repository at
+<a href="https://sourceforge.net/projects/nfs-ganesha/">nfs-ganesha at SourceForge</a> however it has not been updated in years and should be considered dead.</p>
 
-<h3>
+<h2>
 <a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
 
 <p>Philippe Deniel and Thomas Leibovici of CEA are the original authors.  Since then, the contributor
-list has grown to include developers from IBM, Panasas, LinuxBox, as well as a number of individuals.</p>
+list has grown to include developers from IBM, Red Hat, Panasas, LinuxBox, as well as a number of individuals.</p>
 
-<h3>
+<h2>
 <a name="contact-us" class="anchor" href="#contact-us"><span class="octicon octicon-link"></span></a>Contact Us</h3>
 
-<p>You can find most of us on Free-node IRC, channel #ganesha.  Our email archive and listserv is at Ganesha NFS List <a href="mailto:devel@lists.nfs-ganesha.org">devel@lists.nfs-ganesha.org</a>.</p>
+<p>You can find most of us on Libera.Chat IRC, channel #ganesha.  Our email archive and listserv is at Ganesha NFS Lists <a href="mailto:devel@lists.nfs-ganesha.org">devel@lists.nfs-ganesha.org</a>
+and <a href="mailto:support@lists.nfs-ganesha.org">support@lists.nfs-ganesha.org</a>.</p>
       </section>
     </div>
 
